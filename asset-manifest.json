@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/eactjwtblog/static/css/main.794ee28e.chunk.css",
-    "main.js": "/eactjwtblog/static/js/main.92b1ed92.chunk.js",
-    "main.js.map": "/eactjwtblog/static/js/main.92b1ed92.chunk.js.map",
-    "runtime-main.js": "/eactjwtblog/static/js/runtime-main.b5e5e9a4.js",
-    "runtime-main.js.map": "/eactjwtblog/static/js/runtime-main.b5e5e9a4.js.map",
-    "static/js/2.fa520653.chunk.js": "/eactjwtblog/static/js/2.fa520653.chunk.js",
-    "static/js/2.fa520653.chunk.js.map": "/eactjwtblog/static/js/2.fa520653.chunk.js.map",
-    "index.html": "/eactjwtblog/index.html",
-    "static/css/main.794ee28e.chunk.css.map": "/eactjwtblog/static/css/main.794ee28e.chunk.css.map",
-    "static/js/2.fa520653.chunk.js.LICENSE.txt": "/eactjwtblog/static/js/2.fa520653.chunk.js.LICENSE.txt"
+    "main.css": "/reactjwtblog/static/css/main.794ee28e.chunk.css",
+    "main.js": "/reactjwtblog/static/js/main.92b1ed92.chunk.js",
+    "main.js.map": "/reactjwtblog/static/js/main.92b1ed92.chunk.js.map",
+    "runtime-main.js": "/reactjwtblog/static/js/runtime-main.f31bbd5d.js",
+    "runtime-main.js.map": "/reactjwtblog/static/js/runtime-main.f31bbd5d.js.map",
+    "static/js/2.fa520653.chunk.js": "/reactjwtblog/static/js/2.fa520653.chunk.js",
+    "static/js/2.fa520653.chunk.js.map": "/reactjwtblog/static/js/2.fa520653.chunk.js.map",
+    "index.html": "/reactjwtblog/index.html",
+    "static/css/main.794ee28e.chunk.css.map": "/reactjwtblog/static/css/main.794ee28e.chunk.css.map",
+    "static/js/2.fa520653.chunk.js.LICENSE.txt": "/reactjwtblog/static/js/2.fa520653.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5e5e9a4.js",
+    "static/js/runtime-main.f31bbd5d.js",
     "static/js/2.fa520653.chunk.js",
     "static/css/main.794ee28e.chunk.css",
     "static/js/main.92b1ed92.chunk.js"
