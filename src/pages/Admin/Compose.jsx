@@ -19,7 +19,7 @@ function Compose(){
         const token = localStorage.getItem('admin');
         axios({
             method:'POST',
-            url:'/backend/authenticate/verify',
+            url:`${process.env.REACT_APP_SERVER}/backend/authenticate/verify`,
             data:{
                 token: token
             }
@@ -46,7 +46,7 @@ function Compose(){
         e.preventDefault();
         axios({
             method: 'POST',
-            url: '/backend/compose',
+            url: process.env.REACT_APP_SERVER+'/backend/compose',
             data:{
                 title: title,
                 content: body

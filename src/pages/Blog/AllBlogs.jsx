@@ -14,7 +14,7 @@ function AllBlogs(){
     useEffect(()=>{
         axios({
             method: 'GET',
-            url:'/backend/blogs',
+            url: `${process.env.REACT_APP_SERVER}/backend/blogs`,
         }).then((res)=>{
             console.log(res.data);
             setBlogs(res.data);
@@ -24,7 +24,6 @@ function AllBlogs(){
             setIsError(true);
         });
     },[]);
-    
     function createPost(post){
         return(
             <div key={post._id} className="mapBlogDiv">

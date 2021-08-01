@@ -18,7 +18,7 @@ function Delete(){
         const token = localStorage.getItem('admin');
         axios({
             method:'POST',
-            url:'/backend/authenticate/verify',
+            url:`${process.env.REACT_APP_SERVER}/backend/authenticate/verify`,
             data:{
                 token: token
             }
@@ -35,7 +35,7 @@ function Delete(){
         });
         axios({
             method: 'GET',
-            url: '/backend/blogs'
+            url: `${process.env.REACT_APP_SERVER}/backend/blogs`
         }).then((res)=>{
             setPosts(res.data);
         });
@@ -46,7 +46,7 @@ function Delete(){
         if(id !== 'select'){
             axios({
                 method: 'GET',
-                url: '/backend/blogsid/'+id
+                url: process.env.REACT_APP_SERVER+'/backend/blogsid/'+id
             }).then((res)=>{
                 setTitle(res.data.title);
                 setBody(res.data.body);
@@ -66,7 +66,7 @@ function Delete(){
         if(id !== 'select'){
             axios({
                 method: 'POST',
-                url: '/backend/delete/'+id
+                url: process.env.REACT_APP_SERVER+'/backend/delete/'+id
             }).then((res)=>{
                 if(res.status === 200){
                     console.log('Blog Deleted');

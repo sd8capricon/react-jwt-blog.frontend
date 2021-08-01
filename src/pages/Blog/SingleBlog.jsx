@@ -11,7 +11,7 @@ function SingleBlog(){
     useEffect(()=>{
         axios({
             method: 'GET',
-            url: '/backend/blogstitle/'+post,
+            url: `${process.env.REACT_APP_SERVER}/backend/blogstitle/`+post,
         }).then((res)=>{
             setBlog(res.data);
         }).catch((err)=>{

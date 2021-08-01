@@ -21,7 +21,7 @@ function Edit(){
         const token = localStorage.getItem('admin');
         axios({
             method:'POST',
-            url:'/backend/authenticate/verify',
+            url:`${process.env.REACT_APP_SERVER}/backend/authenticate/verify`,
             data:{
                 token: token
             }
@@ -38,7 +38,7 @@ function Edit(){
         });
         axios({
             method: 'GET',
-            url: '/backend/blogs'
+            url: process.env.REACT_APP_SERVER+'/backend/blogs'
         }).then((res)=>{
             setPosts(res.data);
         });
@@ -62,7 +62,7 @@ function Edit(){
         if(id !== 'select'){
             axios({
                 method: 'POST',
-                url: '/backend/update/'+id,
+                url: process.env.REACT_APP_SERVER+'/backend/update/'+id,
                 data:{
                     title: title,
                     content: body
@@ -87,10 +87,9 @@ function Edit(){
     //For getting title and body after id selection
     useEffect(()=>{
         if(id !== 'select'){
-            console.log('get ran');
             axios({
                 method: 'GET',
-                url: '/backend/blogsid/'+id
+                url: process.env.REACT_APP_SERVER+'/backend/blogsid/'+id
             }).then((res)=>{
                 setTitle(res.data.title);
                 setBody(res.data.body);
