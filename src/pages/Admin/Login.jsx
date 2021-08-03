@@ -24,7 +24,7 @@ function Login(){
         e.preventDefault();
         axios({
             method:'POST',
-            url:`${process.env.REACT_APP_SERVER}/backend/authenticate/login`,
+            url:'/backend/authenticate/login',
             data:{
                 username: username,
                 password: password

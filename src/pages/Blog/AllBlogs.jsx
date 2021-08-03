@@ -14,7 +14,7 @@ function AllBlogs(){
     useEffect(()=>{
         axios({
             method: 'GET',
-            url: `${process.env.REACT_APP_SERVER}/backend/blogs`,
+            url: '/backend/blogs',
         }).then((res)=>{
             console.log(res.data);
             setBlogs(res.data);

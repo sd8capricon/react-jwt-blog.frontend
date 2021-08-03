@@ -19,7 +19,7 @@ function Compose(){
         const token = localStorage.getItem('admin');
         axios({
             method:'POST',
-            url:`${process.env.REACT_APP_SERVER}/backend/authenticate/verify`,
+            url:'/backend/authenticate/verify',
             data:{
                 token: token
             }

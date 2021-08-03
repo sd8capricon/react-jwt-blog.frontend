@@ -21,7 +21,7 @@ function Edit(){
         const token = localStorage.getItem('admin');
         axios({
             method:'POST',
-            url:`${process.env.REACT_APP_SERVER}/backend/authenticate/verify`,
+            url:'/backend/authenticate/verify',
             data:{
                 token: token
             }
@@ -38,7 +38,7 @@ function Edit(){
         });
         axios({
             method: 'GET',
-            url: process.env.REACT_APP_SERVER+'/backend/blogs'
+            url: '/backend/blogs'
         }).then((res)=>{
             setPosts(res.data);
         });
@@ -62,7 +62,7 @@ function Edit(){
         if(id !== 'select'){
             axios({
                 method: 'POST',
-                url: process.env.REACT_APP_SERVER+'/backend/update/'+id,
+                url: '/backend/update/'+id,
                 data:{
                     title: title,
                     content: body
@@ -89,7 +89,7 @@ function Edit(){
         if(id !== 'select'){
             axios({
                 method: 'GET',
-                url: process.env.REACT_APP_SERVER+'/backend/blogsid/'+id
+                url: '/backend/blogsid/'+id
             }).then((res)=>{
                 setTitle(res.data.title);
                 setBody(res.data.body);
