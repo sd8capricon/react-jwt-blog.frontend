@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-jwt-blog.frontend/static/css/main.794ee28e.chunk.css",
-    "main.js": "/react-jwt-blog.frontend/static/js/main.60e15727.chunk.js",
-    "main.js.map": "/react-jwt-blog.frontend/static/js/main.60e15727.chunk.js.map",
+    "main.js": "/react-jwt-blog.frontend/static/js/main.c0cfffd1.chunk.js",
+    "main.js.map": "/react-jwt-blog.frontend/static/js/main.c0cfffd1.chunk.js.map",
     "runtime-main.js": "/react-jwt-blog.frontend/static/js/runtime-main.53ffabbe.js",
     "runtime-main.js.map": "/react-jwt-blog.frontend/static/js/runtime-main.53ffabbe.js.map",
     "static/js/2.78a8a9ed.chunk.js": "/react-jwt-blog.frontend/static/js/2.78a8a9ed.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.53ffabbe.js",
     "static/js/2.78a8a9ed.chunk.js",
     "static/css/main.794ee28e.chunk.css",
-    "static/js/main.60e15727.chunk.js"
+    "static/js/main.c0cfffd1.chunk.js"
   ]
 }
