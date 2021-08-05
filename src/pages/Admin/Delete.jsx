@@ -70,7 +70,7 @@ function Delete(){
             }).then((res)=>{
                 if(res.status === 200){
                     console.log('Blog Deleted');
-                    window.location='/admin'
+                    window.location='/react-jwt-blog.frontend/#/admin'
                 }
             });
         }else{

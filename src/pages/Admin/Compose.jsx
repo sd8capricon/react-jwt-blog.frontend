@@ -54,7 +54,7 @@ function Compose(){
         }).then((res)=>{
             console.log(res);
             if(res.data.isError === false){
-                window.location='/admin'
+                window.location='/react-jwt-blog.frontend/#/admin'
             }else if(res.data.isError === true){
                 setIsError(true);
                 if(res.data.error.message === 'Post validation failed: body: Path `body` is required.'){
