@@ -11,7 +11,7 @@ function AdminPanel(){
        const token = localStorage.getItem('admin');
        axios({
            method:'POST',
-           url: '/backend/authenticate/verify',
+           url: 'https://react-jwt-blog-backend.herokuapp.com/backend/authenticate/verify',
            data:{
                token: token
            }

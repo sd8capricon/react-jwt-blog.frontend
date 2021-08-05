@@ -19,7 +19,7 @@ function Compose(){
         const token = localStorage.getItem('admin');
         axios({
             method:'POST',
-            url:'/backend/authenticate/verify',
+            url:'https://react-jwt-blog-backend.herokuapp.com/backend/authenticate/verify',
             data:{
                 token: token
             }
@@ -46,7 +46,7 @@ function Compose(){
         e.preventDefault();
         axios({
             method: 'POST',
-            url: '/backend/compose',
+            url: 'https://react-jwt-blog-backend.herokuapp.com/backend/compose',
             data:{
                 title: title,
                 content: body

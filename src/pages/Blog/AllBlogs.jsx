@@ -14,7 +14,7 @@ function AllBlogs(){
     useEffect(()=>{
         axios({
             method: 'GET',
-            url: '/backend/blogs',
+            url: 'https://react-jwt-blog-backend.herokuapp.com/backend/blogs',
         }).then((res)=>{
             console.log(res.data);
             setBlogs(res.data);

@@ -11,7 +11,7 @@ function SingleBlog(){
     useEffect(()=>{
         axios({
             method: 'GET',
-            url: '/backend/blogstitle/'+post,
+            url: 'https://react-jwt-blog-backend.herokuapp.com/backend/blogstitle/'+post,
         }).then((res)=>{
             setBlog(res.data);
         }).catch((err)=>{

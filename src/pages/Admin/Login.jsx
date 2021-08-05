@@ -24,7 +24,7 @@ function Login(){
         e.preventDefault();
         axios({
             method:'POST',
-            url:'/backend/authenticate/login',
+            url:'https://react-jwt-blog-backend.herokuapp.com/backend/authenticate/login',
             data:{
                 username: username,
                 password: password
