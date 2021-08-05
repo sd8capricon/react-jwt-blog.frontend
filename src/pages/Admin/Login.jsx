@@ -33,7 +33,7 @@ function Login(){
             console.log(res.data);
             if(res.data.authenticated === true){
                 window.localStorage.setItem('admin', res.data.token);
-                window.location='/admin';
+                window.location='/react-jwt-blog.frontend/#/admin';
             }
             if(res.data.authenticated === false){
                 setIsError(true)

@@ -28,7 +28,7 @@ function AdminPanel(){
    },[]);
    function handleLogout(){
        localStorage.removeItem('admin');
-       window.location='/'
+       window.location='/react-jwt-blog.frontend/#/'
    }
     if(isLoggedIn){
         return(
