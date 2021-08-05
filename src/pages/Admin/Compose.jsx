@@ -61,7 +61,7 @@ function Compose(){
                     setError('Body Of The Blog Cannot Be Empty');
                 }else if(res.data.error.message === 'Post validation failed: title: Path `title` is required.'){
                     setError('Title Of The Blog Cannot Be Empty');
-                };;
+                }
             }
         }).catch((err)=>{
             console.log(err);
