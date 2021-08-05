@@ -46,7 +46,7 @@ function Compose(){
         e.preventDefault();
         axios({
             method: 'POST',
-            url: process.env.REACT_APP_SERVER+'/backend/compose',
+            url: '/backend/compose',
             data:{
                 title: title,
                 content: body

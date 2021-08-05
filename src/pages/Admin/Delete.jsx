@@ -18,7 +18,7 @@ function Delete(){
         const token = localStorage.getItem('admin');
         axios({
             method:'POST',
-            url:'/backend/authenticate/verif',
+            url:'/backend/authenticate/verify',
             data:{
                 token: token
             }
@@ -65,7 +65,7 @@ function Delete(){
     function handleDelete(){
         if(id !== 'select'){
             axios({
-                method: 'POST',
+                method: 'DELETE',
                 url: '/backend/delete/'+id
             }).then((res)=>{
                 if(res.status === 200){

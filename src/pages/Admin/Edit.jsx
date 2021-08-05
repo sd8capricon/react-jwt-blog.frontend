@@ -61,7 +61,7 @@ function Edit(){
         e.preventDefault();
         if(id !== 'select'){
             axios({
-                method: 'POST',
+                method: 'PUT',
                 url: '/backend/update/'+id,
                 data:{
                     title: title,
